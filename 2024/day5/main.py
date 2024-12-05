@@ -35,7 +35,10 @@ def validate_updates(updates: list[list[int]], rules: list[tuple[int, int]]) -> 
 def correct_updates(updates: list[list[int]], rules: list[tuple[int, int]]) -> list[list[int]]:
     
     def correct_update(update: list[int], page_id: int = 0, corrected: list[int] = []) -> list[int]:
-        """Traverses over the update and continues while the update adheres to the rules."""
+        """Traverses over the update and swaps elements untill it adheres to the rules."""
+        # Note that this function applies a recursive algorithm tht assumes a correct update 
+        # can be computed with the given update list.
+
         if page_id == len(update)-1:
             # Return True if the entire list adheres
             return update
