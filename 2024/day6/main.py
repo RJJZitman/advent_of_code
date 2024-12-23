@@ -5,7 +5,7 @@ coord = tuple[int, int]
 map_type =  list[list[int]]
 
 
-def get_input(input_path: str = "./input.txt", delim: str = ",") -> map_type:
+def get_input(input_path: str = "./input.txt") -> map_type:
     """ Simple function to read the puzzle input data and ensure corrext types"""
     with open(input_path, "r") as file:
 

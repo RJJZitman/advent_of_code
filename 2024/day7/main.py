@@ -18,11 +18,6 @@ def get_input(input_path: str = "./input.txt") -> list[equation_type]:
 
     return [tuple([int(result), [int(val) for val in vals.split(" ")]]) for result, vals in equations]
 
-def flatten(xss):
-    return [x for xs in xss for x in xs]
-
-from itertools import product
-
 def test_equation(equation: tuple, operands: list[str] = ["+", "*"]) -> bool:
     # Convert operator strings to callable functions
     operand_funcs = [OPERATORS[op] for op in operands if op in operands]
