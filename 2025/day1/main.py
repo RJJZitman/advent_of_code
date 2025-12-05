@@ -2,6 +2,7 @@ import math
 
 from input import puzzle_raw
 
+
 def prep_input(raw_input: str) -> list[str]:
     return raw_input.split("\n")
 
