@@ -17,7 +17,6 @@ def get_input() -> ComplexGridType:
     return grid_dict
 
 
-
 def check_liftable_from(grid: ComplexGridType):
     """
     Closure that encapsulates the paper roll grid and provides functionality
